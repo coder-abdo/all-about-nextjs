@@ -1,13 +1,22 @@
 import { css } from '@emotion/react';
-
+const SR_ONLY = css`
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+`;
 const container = css`
-  padding: 0 2rem;
+  padding: 2rem 0;
 `;
 const title = css`
-  font-size: 4rem;
+  ${SR_ONLY}
 `;
 const main = css`
-  min-height: 100vh;
+  background-color: var(--background-accent);
+  min-height: 40vh;
   display: grid;
   place-items: center;
 `;
