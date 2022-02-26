@@ -10,14 +10,13 @@ const SR_ONLY = css`
 `;
 const container = css`
   padding: 2rem 0;
-`;
-const title = css`
-  ${SR_ONLY}
-`;
-const main = css`
   background-color: var(--background-accent);
   min-height: 40vh;
   display: grid;
   place-items: center;
 `;
+const title = css`
+  ${SR_ONLY}
+`;
+const main = css``;
 export { container, title, main };
